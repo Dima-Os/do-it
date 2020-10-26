@@ -50,6 +50,8 @@
   },
   "dependencies": {
     "core-js": "^3.6.4",
-    "handlebars": "^4.7.3"
+    "handlebars": "^4.7.3",
+    "materialize-css": "^1.0.0-rc.2",
+    "normalize-scss": "^7.0.1"
   }
 }
