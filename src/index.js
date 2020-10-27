@@ -1,5 +1,15 @@
-import 'normalize-scss';
+import 'normalize.css';
 import './styles/styles.scss';
+import 'materialize-css/dist/css/materialize.min.css';
+import 'materialize-css/dist/js/materialize.min';
+// import '';
+import header from './templates/header.hbs';
+
+const onLoadedDocument = () => {
+  document.querySelector('body').insertAdjacentHTML('afterbegin', header());
+};
+
+document.addEventListener('DOMContentLoaded', onLoadedDocument);
 
 /**<!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
